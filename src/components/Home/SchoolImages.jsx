@@ -29,7 +29,7 @@ const SchoolImages = () => {
   useEffect(() => {
     const interval = setInterval(() => {
       setCurrentIndex((prev) => (prev + 1) % schoolCards.length);
-    }, 3000);
+    }, 2000);
 
     return () => clearInterval(interval);
   }, []);
