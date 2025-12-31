@@ -23,8 +23,8 @@ const AuthModal = ({ onClose }) => {
             <h1 className="text-2xl font-bold mb-4">
               Login To Your Account
             </h1>
-            <input className="w-full mb-2 px-4 py-2 border rounded-full" placeholder="Email" />
-            <input className="w-full mb-4 px-4 py-2 border rounded-full" placeholder="Password" />
+            <input className="w-full mb-2 px-4 py-2 bg-gray-100" placeholder="Email" />
+            <input className="w-full mb-4 px-4 py-2 bg-gray-100" placeholder="Password" />
             <button className="border border-black text-black px-8 py-2 rounded-full cursor-pointer">
               Login
             </button>
@@ -42,19 +42,19 @@ const AuthModal = ({ onClose }) => {
               Create Your New Account 
             </h1>
             <input
-                className="w-full mb-2 px-4 py-2 rounded-full border"
+                className="w-full mb-2 px-4 py-2 bg-gray-100"
                 placeholder="Email"
               />
               <input
-                className="w-full mb-2 px-4 py-2 rounded-full border"
+                className="w-full mb-2 px-4 py-2 bg-gray-100"
                 placeholder="Mobile No"
               />
               <input
-                className="w-full mb-2 px-4 py-2 rounded-full border"
+                className="w-full mb-2 px-4 py-2 bg-gray-100"
                 placeholder="Password"
               />
               <input
-                className="w-full mb-4 px-4 py-2 rounded-full border"
+                className="w-full mb-4 px-4 py-2 bg-gray-100"
                 placeholder="Confirm Password"
               />
             <button className="border border-black text-black px-8 py-2 rounded-full cursor-pointer">
