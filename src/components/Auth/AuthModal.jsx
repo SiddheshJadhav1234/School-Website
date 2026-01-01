@@ -13,18 +13,25 @@ const AuthModal = ({ onClose }) => {
 
       {/* Container */}
       <div className="relative w-3xl min-h-100 bg-white rounded-xl shadow-2xl overflow-hidden">
-
         {/* LOGIN FORM */}
         <div
           className={`absolute top-0 left-0 h-full w-1/2 flex items-center justify-center transition-all duration-500
-          ${isSignup ? "translate-x-full opacity-0 z-10" : "translate-x-0 opacity-100 z-20"}`}
+          ${
+            isSignup
+              ? "translate-x-full opacity-0 z-10"
+              : "translate-x-0 opacity-100 z-20"
+          }`}
         >
           <form className="w-full px-10 text-center">
-            <h1 className="text-2xl font-bold mb-4">
-              Login To Your Account
-            </h1>
-            <input className="w-full mb-2 px-4 py-2 bg-gray-100" placeholder="Email" />
-            <input className="w-full mb-4 px-4 py-2 bg-gray-100" placeholder="Password" />
+            <h1 className="text-2xl font-bold mb-4">Login To Your Account</h1>
+            <input
+              className="w-full mb-2 px-4 py-2 bg-gray-100"
+              placeholder="Email"
+            />
+            <input
+              className="w-full mb-4 px-4 py-2 bg-gray-100"
+              placeholder="Password"
+            />
             <button className="border border-black text-black px-8 py-2 rounded-full cursor-pointer">
               Login
             </button>
@@ -34,29 +41,30 @@ const AuthModal = ({ onClose }) => {
         {/* SIGNUP FORM */}
         <div
           className={`absolute h-full w-1/2 flex items-center justify-center transition-all duration-500
-          ${isSignup ? "translate-x-full opacity-100 z-20" : "translate-x-0 opacity-0 z-10"}`}
+          ${
+            isSignup
+              ? "translate-x-full opacity-100 z-20"
+              : "translate-x-0 opacity-0 z-10"
+          }`}
         >
-            
           <form className="w-full px-10 text-center ">
-            <h1 className="text-2xl font-bold mb-4">
-              Create Your New Account 
-            </h1>
+            <h1 className="text-2xl font-bold mb-4">Create Your New Account</h1>
             <input
-                className="w-full mb-2 px-4 py-2 bg-gray-100"
-                placeholder="Email"
-              />
-              <input
-                className="w-full mb-2 px-4 py-2 bg-gray-100"
-                placeholder="Mobile No"
-              />
-              <input
-                className="w-full mb-2 px-4 py-2 bg-gray-100"
-                placeholder="Password"
-              />
-              <input
-                className="w-full mb-4 px-4 py-2 bg-gray-100"
-                placeholder="Confirm Password"
-              />
+              className="w-full mb-2 px-4 py-2 bg-gray-100"
+              placeholder="Email"
+            />
+            <input
+              className="w-full mb-2 px-4 py-2 bg-gray-100"
+              placeholder="Mobile No"
+            />
+            <input
+              className="w-full mb-2 px-4 py-2 bg-gray-100"
+              placeholder="Password"
+            />
+            <input
+              className="w-full mb-4 px-4 py-2 bg-gray-100"
+              placeholder="Confirm Password"
+            />
             <button className="border border-black text-black px-8 py-2 rounded-full cursor-pointer">
               Sign Up
             </button>
@@ -75,6 +83,12 @@ const AuthModal = ({ onClose }) => {
           >
             {/* LEFT PANEL */}
             <div className="absolute w-1/2 h-full flex flex-col items-center justify-center text-white text-center px-8">
+              <div className="flex items-center">
+                <img
+                  className="h-13 w-13 rounded-full"
+                  src="src\assets\Logo.png"
+                ></img>
+              </div>
               <h1 className="text-2xl font-bold">Welcome Back</h1>
               <p className="mt-2 text-sm">Please login</p>
               <button
@@ -87,6 +101,12 @@ const AuthModal = ({ onClose }) => {
 
             {/* RIGHT PANEL */}
             <div className="absolute right-0 w-1/2 h-full flex flex-col items-center justify-center text-white text-center px-8">
+              <div className="flex items-center ">
+                <img
+                  className="h-13 w-13 rounded-full"
+                  src="src\assets\Logo.png"
+                ></img>
+              </div>
               <h1 className="text-2xl font-bold">Hello Friend</h1>
               <p className="mt-2 text-sm">Start your journey</p>
               <button
@@ -111,4 +131,4 @@ const AuthModal = ({ onClose }) => {
   );
 };
 
-export default AuthModal; 
+export default AuthModal;

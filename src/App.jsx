@@ -1,16 +1,19 @@
-import React from 'react'
-import Header from './components/Layouts/Header.jsx'
-import HomePage from './Pages/HomePage.jsx'
-import Footer from './components/Layouts/Footer.jsx'
-import { GrAppsRounded } from 'react-icons/gr'
-import { BrowserRouter } from 'react-router-dom'
-import AppRutes from './routes/AppRutes.jsx'
+import React from "react";
+import { BrowserRouter, Routes, Route } from "react-router-dom";
+
+import Header from "./components/Layouts/Header";
+import HomePage from "./Pages/HomePage";
+import AboutUsPage from "./Pages/AboutUsPage";
 
 const App = () => {
   return (
-   <BrowserRouter>
-   <AppRutes/>
-   </BrowserRouter>
-  )
-}
-export default App
+    <BrowserRouter>
+      <Routes>
+        <Route path="/" element={<HomePage />} />
+        <Route path="/about" element={<AboutUsPage />} />
+      </Routes>
+    </BrowserRouter>
+  );
+};
+
+export default App;
